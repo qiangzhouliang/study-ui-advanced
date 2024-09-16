@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MBP-VK-ZjS" customClass="RotateView">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LuckyBaseBackground" translatesAutoresizingMaskIntoConstraints="NO" id="dN9-sr-ZVL">
+                    <rect key="frame" x="10" y="0.0" width="276" height="286"/>
+                </imageView>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="LuckyRotateWheel" translatesAutoresizingMaskIntoConstraints="NO" id="Ibe-C1-NOY">
+                    <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9Z-4P-JmX">
+                    <rect key="frame" x="101" y="81.666666666666657" width="84" height="122.66666666666666"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="LuckyCenterButton"/>
+                    <state key="highlighted" image="LuckyCenterButtonPressed"/>
+                    <connections>
+                        <action selector="pickNumber:" destination="MBP-VK-ZjS" eventType="touchUpInside" id="2eL-uf-ug3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Mfs-8T-jJz"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ibe-C1-NOY" firstAttribute="top" secondItem="MBP-VK-ZjS" secondAttribute="top" id="0bR-DF-jNS"/>
+                <constraint firstItem="dN9-sr-ZVL" firstAttribute="top" secondItem="MBP-VK-ZjS" secondAttribute="top" id="BDe-RI-lRv"/>
+                <constraint firstItem="dN9-sr-ZVL" firstAttribute="leading" secondItem="Mfs-8T-jJz" secondAttribute="leading" constant="10" id="L8Z-D3-Em3"/>
+                <constraint firstItem="p9Z-4P-JmX" firstAttribute="centerY" secondItem="MBP-VK-ZjS" secondAttribute="centerY" id="Qh3-bV-Zzh"/>
+                <constraint firstItem="p9Z-4P-JmX" firstAttribute="centerX" secondItem="MBP-VK-ZjS" secondAttribute="centerX" id="TxZ-t5-JTo"/>
+                <constraint firstAttribute="bottom" secondItem="dN9-sr-ZVL" secondAttribute="bottom" id="a1y-Iu-OCA"/>
+                <constraint firstAttribute="trailing" secondItem="dN9-sr-ZVL" secondAttribute="trailing" id="dtq-gR-Rv3"/>
+                <constraint firstItem="Ibe-C1-NOY" firstAttribute="leading" secondItem="Mfs-8T-jJz" secondAttribute="leading" id="mIl-lY-Q4F"/>
+                <constraint firstAttribute="bottom" secondItem="Ibe-C1-NOY" secondAttribute="bottom" id="pnu-p5-M80"/>
+                <constraint firstAttribute="trailing" secondItem="Ibe-C1-NOY" secondAttribute="trailing" id="ws3-iU-gaX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="rotateImage" destination="Ibe-C1-NOY" id="Gni-s5-5Mb"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="0.0"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LuckyBaseBackground" width="286" height="286"/>
+        <image name="LuckyCenterButton" width="84" height="122.5"/>
+        <image name="LuckyCenterButtonPressed" width="81" height="81"/>
+        <image name="LuckyRotateWheel" width="286" height="286"/>
+    </resources>
+</document>

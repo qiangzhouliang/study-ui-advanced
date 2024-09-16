@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZJR-RL-a2X" customClass="SWAboutHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="about_logo" translatesAutoresizingMaskIntoConstraints="NO" id="vSd-w7-rkL">
+                    <rect key="frame" x="91" y="52" width="211" height="68"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="黑马13期 版权所以" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pik-WU-8DP">
+                    <rect key="frame" x="122.66666666666667" y="128" width="147.66666666666663" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="o1y-Qr-QLp"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vSd-w7-rkL" firstAttribute="centerX" secondItem="ZJR-RL-a2X" secondAttribute="centerX" id="Fdx-k2-WSk"/>
+                <constraint firstItem="pik-WU-8DP" firstAttribute="centerX" secondItem="ZJR-RL-a2X" secondAttribute="centerX" id="Y66-b8-rBo"/>
+                <constraint firstItem="o1y-Qr-QLp" firstAttribute="bottom" secondItem="vSd-w7-rkL" secondAttribute="bottom" constant="96" id="lJp-Np-6wq"/>
+                <constraint firstItem="pik-WU-8DP" firstAttribute="leading" secondItem="o1y-Qr-QLp" secondAttribute="leading" constant="122.66666666666669" id="oZ2-tV-Tpb"/>
+                <constraint firstItem="pik-WU-8DP" firstAttribute="top" secondItem="vSd-w7-rkL" secondAttribute="bottom" constant="8" id="sCU-xv-Mfr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="289" y="-15"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about_logo" width="211" height="67.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

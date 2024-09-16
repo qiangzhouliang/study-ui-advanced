@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  study-OC-UI-Advanced
+//
+//  Created by swan on 2024/9/6.
+//
+#ifdef __OBJC__
+
+#import "HMTool.h"
+
+#ifdef DEBUG
+
+#define HMLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define HMLog(...)
+
+#endif
+
+#endif

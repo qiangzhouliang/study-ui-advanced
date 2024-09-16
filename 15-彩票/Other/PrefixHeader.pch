@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  study-OC-UI-Advanced
+//
+//  Created by swan on 2024/9/12.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+Frame.h"
+
+#import "SWSaveTool.h"
+
+#import "SWAppTool.h"
+
+#define KScreenSize [UIScreen mainScreen].bounds
+#define KScreenWidth KScreenSize.size.width
+#define KScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+#ifdef DEBUG
+
+#define SWLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define SWLog(...)
+
+#endif
+
+#endif /* PrefixHeader_pch */

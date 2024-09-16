@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fh1-SP-crk">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="39y-3U-aju">
+            <objects>
+                <navigationController id="fh1-SP-crk" customClass="SWNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GI2-AM-qMN">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RXB-K9-Yqj" kind="relationship" relationship="rootViewController" id="86c-wz-5yI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2vI-db-pm4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-473" y="-19"/>
+        </scene>
+        <!--我的彩票-->
+        <scene sceneID="WBM-bW-h4U">
+            <objects>
+                <viewController id="RXB-K9-Yqj" customClass="SWMyLotteryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H8d-yC-oIa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="0gp-ZJ-y31">
+                                <rect key="frame" x="48" y="137" width="297" height="139"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网易邮箱账号可以直接登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0C-iU-Vrm">
+                                <rect key="frame" x="92.666666666666686" y="296" width="208" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pZ-70-8WT">
+                                <rect key="frame" x="16" y="343" width="361" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="3c9-qW-T6H"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="登录" backgroundImage="RedButton"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hDU-51-2yr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0gp-ZJ-y31" firstAttribute="centerX" secondItem="G0C-iU-Vrm" secondAttribute="centerX" id="8XJ-qm-k0S"/>
+                            <constraint firstItem="0gp-ZJ-y31" firstAttribute="centerX" secondItem="3pZ-70-8WT" secondAttribute="centerX" id="9g3-b4-u5U"/>
+                            <constraint firstItem="0gp-ZJ-y31" firstAttribute="top" secondItem="hDU-51-2yr" secondAttribute="top" constant="34" id="EaZ-CU-6rf"/>
+                            <constraint firstItem="G0C-iU-Vrm" firstAttribute="centerX" secondItem="H8d-yC-oIa" secondAttribute="centerX" id="Phg-yi-1tb"/>
+                            <constraint firstItem="3pZ-70-8WT" firstAttribute="top" secondItem="G0C-iU-Vrm" secondAttribute="bottom" constant="26" id="T2u-xN-3vd"/>
+                            <constraint firstItem="3pZ-70-8WT" firstAttribute="top" secondItem="G0C-iU-Vrm" secondAttribute="bottom" constant="26" id="T5D-RP-XMX"/>
+                            <constraint firstItem="G0C-iU-Vrm" firstAttribute="top" secondItem="0gp-ZJ-y31" secondAttribute="bottom" constant="20" id="WF3-wp-gra"/>
+                            <constraint firstItem="0gp-ZJ-y31" firstAttribute="centerX" secondItem="H8d-yC-oIa" secondAttribute="centerX" id="n7g-R5-dtZ"/>
+                            <constraint firstItem="3pZ-70-8WT" firstAttribute="leading" secondItem="hDU-51-2yr" secondAttribute="leading" constant="16" id="oNK-zf-38E"/>
+                            <constraint firstItem="hDU-51-2yr" firstAttribute="trailing" secondItem="3pZ-70-8WT" secondAttribute="trailing" constant="16" id="p7R-8N-yRg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的彩票" id="8hW-Qy-Wvo">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="0Qx-ZN-8nQ">
+                            <inset key="largeContentSizeImageInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="HRI-Q2-Oh8">
+                                <rect key="frame" x="16" y="5" width="87" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="FBMM_Barbutton" title="客服"/>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="Mylottery_config" id="LHD-Ca-IDU">
+                            <connections>
+                                <action selector="settingClick:" destination="RXB-K9-Yqj" id="3Kx-po-uks"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="loginButton" destination="3pZ-70-8WT" id="Zx5-fP-qWp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R22-9e-6U4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="391.60305343511448" y="-19.014084507042256"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FBMM_Barbutton" width="13" height="13"/>
+        <image name="LoginScreen" width="296.5" height="138.5"/>
+        <image name="Mylottery_config" width="22" height="22"/>
+        <image name="RedButton" width="61.5" height="34.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
